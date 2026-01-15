@@ -11,7 +11,6 @@
 
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="25dp"
@@ -31,7 +30,23 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@drawable/greybackground"
-            android:hint="    Name" />
+            android:id="@+id/eTname"
+            android:hint="    Enter Fullname" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:helperTextTextColor="@color/red"
+        app:helperText="Required"
+        android:layout_margin="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/greybackground"
+            android:id="@+id/eTUID"
+            android:hint="Unique ID" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -40,13 +55,15 @@
         app:helperTextTextColor="@color/red"
         app:endIconMode="password_toggle"
         app:helperText="Required"
+        app:startIconDrawable="@drawable/baseline_lock_24"
         android:layout_margin="10dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@drawable/greybackground"
-            android:hint="Create Password" />
+            android:id="@+id/eTcreatePassword"
+            android:hint="    Create Password" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -55,13 +72,15 @@
         app:helperTextTextColor="@color/red"
         app:endIconMode="password_toggle"
         app:helperText="Required"
+        app:startIconDrawable="@drawable/baseline_lock_24"
         android:layout_margin="10dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@drawable/greybackground"
-            android:hint="Confirm Password" />
+            android:id="@+id/eTconfirmPassword"
+            android:hint="    Confirm Password" />
     </com.google.android.material.textfield.TextInputLayout>
 
 <Button
